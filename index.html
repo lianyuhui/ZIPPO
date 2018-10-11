@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zippo|首页</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+    <div class="warp">
+        <div class="header">
+            <a title="欢迎光临之宝！" href="">欢迎光临之宝！加入之宝会员获得更多惊喜！</a>
+        </div>
+        <div class="zc">
+                <div>
+                    <p>
+                        <a href="">中文</a>&nbsp; / &nbsp;<a href="">EN</a>
+                    </p>
+                    <span>
+                        <a href="#" title="登录">登录</a>
+                        <a href="#" title="注册">注册</a>
+                    </span>
+                </div>
+        </div>
+        <div class="logo">
+            <ul>
+                <li class="pic"><a href=""><img src="img/index/logo.svg"  title="Zippo顶部logo"/></a></li>
+                <li class="li">
+                    <a href="" title="资讯信息"><img src="" alt=""> 资讯信息</a>
+                    <a href="" title="官方俱乐部" target="_blank">官方俱乐部</a>
+                    <a href="" target="_blank" title="经销商">经销商</a>
+                    <a href="" title="经销商在线订货平台">在线订货</a>
+                    <a href="" title="天猫商城" target="_blank">天猫商城</a>
+                    <a href="" title="京东商城" target="_blank">京东商城</a>
+                </li>
+            </ul>
+        </div>
+        <div class="list">
+            <div class="liBox">
+                <ul>
+                    <li class="so">
+                        <a class="st" href="" title="防风火机">防风火机</a>
+                        <ul class="traval">
+                            <li><a herf="" title="防风火机">防风火机</a></li>
+                            <li><a herf="" title="户外生火器">户外生火器</a></li>
+                            <li><a herf="" title="多用途点火器">多用途点火器</a></li>
+                        </ul>
+                    </li>
+                    <li class="so">
+                        <a class="st" href="" title="户外产品">户外产品</a>
+                        <ul class="traval">
+                            <li><a herf="" title="户外用品">户外用品</a></li>
+                            <li><a herf="" title="点火用具">点火用具</a></li>
+                        </ul>
+                    </li>
+                    <li class="so">
+                        <a class="st" href="" title="生活方式">生活方式</a>
+                        <ul class="traval">
+                            <li><a herf="" title="品味男装">品味男装</a></li>
+                            <li><a herf="" title="男士香氛">男士香氛</a></li>
+                            <li><a herf="" title="书写用具">书写用具</a></li>
+                            <li><a herf="" title="经典手表">经典手表</a></li>
+                        </ul>
+                    </li>
+                    <li class="so">
+                        <a class="st" href="" title="火焰装备">火焰装备</a>
+                        <ul class="traval">
+                            <li><a herf="" title="多功能点火器">多功能点火器</a></li>
+                            <li><a herf="" title="配件">配件</a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <div id="sliderBox" style="width:100%;height: 428px; background-color: red;">
+            <!--放轮播图-->
+        </div>
+        <div class="promotion">
+            <div class="pro">
+                <img src="img/index/pro1.jpg" alt="">
+                <a href=""></a>
+            </div>
+            <div class="pro">
+                <img src="img/index/pro2.jpg" alt="">
+                <a href=""></a>
+            </div>
+            <div class="pro">
+                <img src="img/index/pro3.jpg" alt="">
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="line">
+            <p>特色馆藏</p>
+        </div>
+        <div class="feature">
+            <div class="pro">
+                <img src="img/index/fea1.jpg" alt="">
+                <a href=""></a>
+            </div>
+            <div class="pro">
+                <img src="img/index/fea2.jpg" alt="">
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="line line2">
+                <p>注册之宝会员获得更多惊喜!<a href="">注册会员</a></p>
+                <!-- <a href="">注册会员</a> -->
+        </div>
+        <div class="bot">
+            <div class="botson">
+                <a href="">
+                    <img src="img/index/logo-white.svg" alt="">
+                </a>
+                <p>
+                    <a href="">关于我们</a>
+                    <a href="">隐私政策</a>
+                    <a href="">服务与支持</a>
+                    <a href="">网站地图</a>
+                </p>
+                <a  class="swhz" href="">
+                    <img src="" alt="">商务合作
+                </a>
+        </div>
+        </div>
+        <div class="foot">
+            <div class="footer">
+                <p>2018 Zippo Manufacturing Company　　京ICP备15066446号-2　　经典之宝（中国）商业有限公司版权所有</p>
+                <div class="wb">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/slider.js" ></script>
+<script>
+$(function(){
+    $(".so").each(function(){
+        $(this).hover(
+            function(){
+                $(this).find("ul").css({display:"block"});
+            },
+            function(){
+                $(this).find("ul").css({display:"none"});
+            }
+        );
+    });
+});
+window.onload = function(){
+		let s1 = new Slider($("#sliderBox"),1360,428,["img/index/lun1.jpg","img/index/lun2.jpg","img/index/lun3.jpg"],
+				10,"#ccc","red",
+                true,-1,3000);
+        
+}
+
+
+</script>
