@@ -1,0 +1,65 @@
+
+// matter
+.matter{
+    margin: 0 auto;
+    padding: 30px 40px 0 40px;
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+.maLeft{
+    width: 180px;
+    float: left;
+    padding: 0 20px;
+    border: solid 1px #edebeb;
+    background-color: #fff;
+    overflow: hidden;
+}
+.maLeft li{
+    height: 60px;
+    border-bottom: 1px solid #edebeb;
+    font-size: 15px;
+    line-height: 60px;
+    color: #666;
+}
+.maRight{
+    display: inline-block;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.maRight h2{
+    display: block;
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: #dd1229;
+    overflow: hidden;
+    font-weight: normal;
+}
+.maRight .reuse{
+    padding-bottom: 20px;
+}
+.maRight h3{
+    display: block;
+    font-size: 24px;
+    color: #666;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+.maRight h3 a{
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 14px;
+    color: #dd1229;
+    padding-left: 10px;
+}
+.maRight p{
+    margin-left: 15px;
+    border-left: solid 2px #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+}
+.line{
+    background-color: #f6f6f6;
+
+}

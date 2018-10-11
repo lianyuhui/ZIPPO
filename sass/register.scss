@@ -1,0 +1,68 @@
+.reg{
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+.member{
+    margin: 20px auto;
+    width: 420px;
+    border: solid 1px #edebeb;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.member p{
+    margin: 19px auto 0 auto;
+    width: 372px;
+    height: 33px;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+}
+input{
+    display: block;
+    margin: 0 auto;
+    width: 372px;
+    height: 36px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #666666;
+}
+.member #btn{
+    display: block;
+    margin: 0 auto;
+    width: 372px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:orangered;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.member #che{
+    margin: 20px 0;
+    display: inline-block;
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+}
+.member span{
+    margin: 20px 0;
+    display: inline-block;
+    margin-left: 22px;
+    color: red;
+}
+.member a{
+    display: block;
+    margin: 20px auto;
+    width: 372px;
+    height: 33px;
+    border-radius: 5px;
+    border: solid 1px #edebeb;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 31px;
+}
