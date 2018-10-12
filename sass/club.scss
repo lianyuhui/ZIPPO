@@ -1,20 +1,220 @@
 @charset "utf-8";
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p,td,input,select,option,textarea{
+	margin:0;
+	padding:0;
 }
-html, body {
+body{
+    font-family:SourceHan,"Microsoft YaHei",Arial, Helvetica,SimSun;
+}
+html,body{
     width: 100%;
-    background-color: #fcfdfd;
+    height: 100%;
 }
-img {
-    border:0;
-    display:inline-block;
+a{
+    text-decoration:none;
 }
-ul,li {
-    list-style: none;
+a:hover{
+    text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+    border:none;
+    display: inline-block;
+}
+// head
+.hea{
+    height: 50px;
+    background-color: black;
+}
+
+.nav .logo{
+    height: 34px;
+    float: left;
+    padding-top: 16px;
+    margin-left: 50px;
+}
+// menu
+.menu{
+    float: left;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.menu li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.menu li a{
+    height: 32px;
+    line-height: 32px;
+    font-weight: 800;
+    color: white;
+    font-size: 16px;
+}
+.menu ul :nth-child(1) a{
+    color: orangered;
+}
+// zcdl
+.zcdl{
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+
+}
+.zcdl a{
+    color: white;
+    font-size: 12px;
+    margin: 0 10px 0 25px;
+}
+.nav .zcdl a:nth-of-type(3){
+    margin-left: 10px;
+}
+.zcdl form{
+    position: relative;
+    float: right;
+    height: 25px;
+    margin-right: 70px;
+    margin-top: 10px;
+    
+}
+.zcdl form input{
+    display: block;
+    width: 170px;
+    height: 10px;
+    float: left;
+    color: yellowgreen;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-left: 1px solid #edebeb;
+}
+.zcdl form button{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    background: url(../img/index/sou.png) -8px -2px;
+    outline: none;
+    border: 0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-right: 1px solid #edebeb;
+    cursor: pointer;
+}
+// section
+  // head
+section{
+    width: 100%;
+    background: url(../img/club/page-bg.png) repeat;
+}
+.sec-logo{
+    width: 175px;
+    height: 97px;
+    padding: 10px 50px;
+}
+.sec-logo img{
+    width: 175px;
+    height: 97px;
+}
+// sec-box
+.sec-box{
+    width: 100%;
+    overflow: hidden;
+}
+.sec-box1{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+}
+.sec-box1-1{
+    position: absolute;
+    left: 0px;
+    top: -62px;
+}
+.sec-box1-2{
+    position: absolute;
+    left: 53px;
+    top: 0px;
+}
+.sec-box1-3{
+    position: absolute;
+    left: 900px;
+    top: 70px;
+}
+.sec-box1-3 a:nth-of-type(1){
+    position: absolute;
+    top: 310px;
+    left: 66px;
+}
+.sec-box1-3 a:nth-of-type(2){
+    position: absolute;
+    top: 385px;
+    left: 66px;
+}
+.sec-box2{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 712px;
+    margin-bottom: 20px;
+}
+.sec-box2-1{
+    position: relative;
+    top:392px;
+    left: 0px;
+}
+.sec-box2-2{
+    position: absolute;
+    top: 0px;
+    left: 54px;
+}
+.sec-box2-3{
+    position: absolute;
+    top: 0px;
+    left: 442px;
+}
+.sec-box3{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 688px;
+    margin-bottom: 20px;
+}
+.sec-box3-1{
+    position: relative;
+    top:10px;
+    left: 0px;
+}
+.sec-box3-2{
+    position: absolute;
+    top: 0px;
+    left: 54px;
+}
+.sec-box3-3{
+    position: absolute;
+    top: 2px;
+    left: 900px;
+}
+.sec-box4{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 746px;
+}
+.sec-box4-1{
+    position: absolute;
+    top: 0px;
+    left: 52px;
 }
 
 
