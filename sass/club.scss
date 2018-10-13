@@ -24,8 +24,8 @@ img{
     border:none;
     display: inline-block;
 }
-// head
-.hea{
+// header
+header{
     height: 50px;
     background-color: black;
 }
@@ -114,6 +114,7 @@ img{
 section{
     width: 100%;
     background: url(../img/club/page-bg.png) repeat;
+    padding-bottom: 306px;
 }
 .sec-logo{
     width: 175px;
@@ -129,6 +130,7 @@ section{
     width: 100%;
     overflow: hidden;
 }
+
 .sec-box1{
     position: relative;
     overflow: hidden;
@@ -164,7 +166,6 @@ section{
 .sec-box2{
     position: relative;
     overflow: hidden;
-    width: 100%;
     height: 712px;
     margin-bottom: 20px;
 }
@@ -183,6 +184,59 @@ section{
     top: 0px;
     left: 442px;
 }
+
+.sec-box .sec-2-shan{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.shan{
+    width: 190px;
+    height: 130px;
+}
+.sec-2-shan a:nth-of-type(1){
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 60%;
+}
+.sec-2-shan a img:nth-of-type(2){
+    position: absolute;
+    left: 23%;
+    top: 2%;
+
+}
+.sec-2-shan a:nth-of-type(2){
+    position: absolute;
+    left: 40%;
+    top: 50px;
+    width: 50%;
+}
+.sec-2-shan a:nth-of-type(3){
+    position: absolute;
+    left: 70%;
+    top: 45%;
+    width: 50%;
+}
+.sec-2-shan a:nth-of-type(3) img:nth-of-type(2){
+    position: absolute;
+    left: -5%;
+    top: 35%;
+}
+.sec-2-shan a:nth-of-type(4){
+    position: absolute;
+    left: 45%;
+    bottom: 55px;
+    width: 50%;
+}
+.sec-2-shan a:nth-of-type(4) img:nth-of-type(2){
+    position: absolute;
+    left: -5%;
+    top: 35%;
+}
+
 .sec-box3{
     position: relative;
     overflow: hidden;
@@ -215,6 +269,46 @@ section{
     position: absolute;
     top: 0px;
     left: 52px;
+}
+.sec-box4-1 a{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+// footer
+footer{
+    position: relative;
+    height: 200px;
+    background-color: black;
+    padding: 80px 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .foot1{
+    margin-right: 5%;
+}
+.foot2{
+    margin-right: 5%;
+}
+.foot2 a{
+    display: block;
+    margin-top: 40px;
+}
+// box2动画效果
+.sec-2-shan .shan{
+    animation: shan 2s linear infinite;
+}
+@keyframes shan{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
