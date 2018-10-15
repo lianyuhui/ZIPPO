@@ -9,12 +9,52 @@ function $(str){
 }
 
 window.onload = function(){
+
+
+     // 正则用户名（手机号）
+     $("#username").onkeyup = function(){
+		let reg = /^1[3-9]\d{9}$/; 
+		
+		let str1= this.value;
+		if(reg.test(str1)){
+            $("#usernameMessage11").innerHTML = "√";
+           
+		}else{
+			$("#usernameMessage11").innerHTML = "请输入正确的手机号！";
+        }	
+        if($("#usernameMessage1").value = ""){
+            $("#usernameMessage1").value = "";
+        }	
+    }
+    //密码
+    $("#userpass").onkeyup = function(){
+        //（必须包含字母、数字、特殊字符，长度6个字符以上）
+        let regLetter = /[a-zA-Z]/; 
+        let regNum = /[0-9]/; 
+        let regSpecial = /[\@^*$!#]/; 
+
+        var str2 = this.value;
+        if(str2.length>=6 && regLetter.test(str2) && regNum.test(str2) && regSpecial.test(str2) ){
+            $("#usernameMessage2").innerHTML = "√";
+        }else{
+            $("#usernameMessage2").innerHTML = "6位以上字母、数字、特殊字符";
+        }		
+    } 
+
+     $("#chong").onkeyup = function(){
+        if($("#userpass").value != $("#chong").value){
+            $("#usernameMessage3").innerHTML = "密码不一致";
+        }else{
+            $("#usernameMessage3").innerHTML = "";
+        }
+     }
+//连接
     $("#btn").onclick = function(){
         //1、创建对象
         let xhr = new XMLHttpRequest();
         
         //2、设置请求参数
-        xhr.open("post","regSave2.php",true);
+        xhr.open("post","regSave.php",true);
         
         //3、设置回调函数
         xhr.onreadystatechange = function(){
@@ -22,14 +62,14 @@ window.onload = function(){
                 //5、接收响应
                 let str = xhr.responseText;
                 if(str=="1"){
-                    alert("注册成功！");
-                    location.href="index.html";
+                    alert("恭喜您，注册成功！");
+                    location.href="login.html";
                 }else if(str=="-1"){
-                    $("#message").style.display = "block";
-                    $("#message").innerHTML="注册失败，用户名已经存在";
+                    
+                    $("#usernameMessage1").innerHTML="注册失败，用户名已经存在";
                 }else{
-                    $("#message").style.display = "block";
-                    $("#message").innerHTML="注册失败，服务器出错！";
+                    
+                    $("#usernameMessage1").innerHTML="注册失败，服务器出错！";
                 }
             }
         }
@@ -46,23 +86,22 @@ window.onload = function(){
         let xhr = new XMLHttpRequest();
         
         //2、设置请求参数
-        xhr.open("get","ajax02.php?username="+this.value,true);
-        
+        xhr.open("get","register.php?username="+this.value,true);       
         //3、设置回调函数
         xhr.onreadystatechange = function(){
             if(xhr.readyState==4 && xhr.status==200){
                 //5、接收响应
                 let str = xhr.responseText;
-                if(str=="1"){
-                    $("#usernameMessage").innerHTML = "输入正确";
-                }else{
-                    $("#usernameMessage").innerHTML = "用户名已被注册";
+                if(str!="1"){
+                    $("#usernameMessage1").innerHTML = "用户名已被注册";
                 }
-                
             }
         }
-        
         //4、发送请求
         xhr.send();
-    }
+
+
+    }    
 }
+
+    

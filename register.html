@@ -11,7 +11,7 @@
 <body>
     <div class="warp">
         <div class="header">
-            <a title="欢迎光临之宝！" href="">欢迎光临之宝！加入之宝会员获得更多惊喜！</a>
+            <a title="欢迎光临之宝!" href="">欢迎光临之宝！加入之宝会员获得更多惊喜！</a>
         </div>
         <div class="zc">
                 <div>
@@ -32,52 +32,12 @@
                     <a href="" title="官方俱乐部" target="_blank">官方俱乐部</a>
                     <a href="" target="_blank" title="经销商">经销商</a>
                     <a href="" title="经销商在线订货平台">在线订货</a>
-                    <a href="" title="天猫商城" target="_blank">天猫商城</a>
+                    <a href="" title="全部商品" target="_blank">全部商品</a>
                     <a href="" title="京东商城" target="_blank">京东商城</a>
                 </li>
             </ul>
         </div>
-        <div class="list">
-            <div class="liBox">
-                <ul>
-                    <li class="so">
-                        <a class="st" href="" title="防风火机">防风火机</a>
-                        <ul class="traval">
-                            <li><a herf="" title="防风火机">防风火机</a></li>
-                            <li><a herf="" title="户外生火器">户外生火器</a></li>
-                            <li><a herf="" title="多用途点火器">多用途点火器</a></li>
-                        </ul>
-                    </li>
-                    <li class="so">
-                        <a class="st" href="" title="户外产品">户外产品</a>
-                        <ul class="traval">
-                            <li><a herf="" title="户外用品">户外用品</a></li>
-                            <li><a herf="" title="点火用具">点火用具</a></li>
-                        </ul>
-                    </li>
-                    <li class="so">
-                        <a class="st" href="" title="生活方式">生活方式</a>
-                        <ul class="traval">
-                            <li><a herf="" title="品味男装">品味男装</a></li>
-                            <li><a herf="" title="男士香氛">男士香氛</a></li>
-                            <li><a herf="" title="书写用具">书写用具</a></li>
-                            <li><a herf="" title="经典手表">经典手表</a></li>
-                        </ul>
-                    </li>
-                    <li class="so">
-                        <a class="st" href="" title="火焰装备">火焰装备</a>
-                        <ul class="traval">
-                            <li><a herf="" title="多功能点火器">多功能点火器</a></li>
-                            <li><a herf="" title="配件">配件</a></li>
-                        </ul>
-                    </li> 
-                </ul>
-                <form  method="get" role="search">
-                    <input id="search-input" type="text" name="q" value="" placeholder="搜索...">
-                    <button id="search-button" type="button" title="搜索按钮"></button>
-                </form>
-            </div>
-        </div>
+        
         <div class="hao">
             <ul>
                 <li><a href="index.html">首页</a></li>
@@ -91,15 +51,20 @@
         <div class="reg">
             <div class="member">
                 <p>请输入手机号</p>
-                <input type="text">
+                <input type="text" id="username" required>
+                <span id="usernameMessage1"></span>
+                <span id="usernameMessage11"></span>
                 <p>输入密码</p>
-                <input type="password">
+                <input type="password" id="userpass" required>
+                <span id="usernameMessage2"></span>
                 <p>确认密码</p>
-                <input type="password">
-                <input type="checkbox" id="che" value="">
+                <input type="password" id="chong" required>
+                <span id="usernameMessage3"></span>
+                <input type="checkbox" id="che" value="" checked>
                 <span>同意隐私和法律和一般使用条款</span>
-                <button type="button" id="btn" alt="注册">注册</button>
+                <button type="submit" id="btn" alt="注册">注册</button>
                 <a href="login.html" alt="已有会员登录">已有会员登录</a>
+                
             </div>
         </div>
         <div class="bot">
@@ -132,10 +97,7 @@
 
 </body>
 </html>
-
-<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
-<script type="text/javascript" src="js/slider.js" ></script>
-<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/register.js" ></script>
 <script>
 
 </script>

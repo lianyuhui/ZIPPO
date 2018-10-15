@@ -4,6 +4,7 @@
     background-color: #f6f6f6;
 }
 .member{
+    position: relative;
     margin: 20px auto;
     width: 420px;
     border: solid 1px #edebeb;
@@ -11,7 +12,7 @@
     background-color: #fff;
 }
 .member p{
-    margin: 19px auto 0 auto;
+    margin: 19px 60px 0;
     width: 372px;
     height: 33px;
     font-size: 14px;
@@ -21,7 +22,7 @@
 input{
     display: block;
     margin: 0 auto;
-    width: 372px;
+    width: 300px;
     height: 36px;
     border: solid 1px #ccc;
     border-radius: 5px;
@@ -32,7 +33,7 @@ input{
 .member #btn{
     display: block;
     margin: 0 auto;
-    width: 372px;
+    width: 300px;
     height: 40px;
     border-radius: 5px;
     background-color:orangered;
@@ -44,21 +45,20 @@ input{
 .member #che{
     margin: 20px 0;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 60px;
     width: 16px;
     height: 16px;
     line-height: 16px;
 }
 .member span{
     margin: 20px 0;
-    display: inline-block;
-    margin-left: 22px;
+    margin-left: 60px;
     color: red;
 }
 .member a{
     display: block;
     margin: 20px auto;
-    width: 372px;
+    width: 300px;
     height: 33px;
     border-radius: 5px;
     border: solid 1px #edebeb;
@@ -66,4 +66,27 @@ input{
     color: #666;
     text-align: center;
     line-height: 31px;
+}
+#usernameMessage1{
+    position: absolute;
+    top: 43px;
+    right: 70px;
+}
+#usernameMessage2{
+    position: absolute;
+    top: 150px;
+    right: 70px;
+}
+#usernameMessage3{
+    position: absolute;
+    top: 240px;
+    right: 70px;
+}
+#message{
+    width: 300px;
+    height: 30px;
+    margin: 0  auto;
+    text-align: center;
+    color: red;
+    display: none;
 }
