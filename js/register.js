@@ -1,3 +1,4 @@
+
 function $(str){
     if(str.charAt(0)=="#"){
         return document.getElementById(str.substring(1));
@@ -22,9 +23,7 @@ window.onload = function(){
 		}else{
 			$("#usernameMessage11").innerHTML = "请输入正确的手机号！";
         }	
-        if($("#usernameMessage1").value = ""){
-            $("#usernameMessage1").value = "";
-        }	
+        	
     }
     //密码
     $("#userpass").onkeyup = function(){
@@ -94,14 +93,14 @@ window.onload = function(){
                 let str = xhr.responseText;
                 if(str!="1"){
                     $("#usernameMessage1").innerHTML = "用户名已被注册";
+                }else if(str=="1" || $("#username").value == ""){
+                    $("#usernameMessage1").innerHTML = "";
+                }else{
+                    $("#usernameMessage1").innerHTML = "";
                 }
             }
         }
         //4、发送请求
         xhr.send();
-
-
     }    
 }
-
-    

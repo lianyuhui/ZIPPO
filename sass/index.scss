@@ -1,35 +1,33 @@
-
+@import "public";
 /* promotion */
 
-.promotion{
+.promotion,.feature{
     margin : 26px auto 0 auto;
     padding: 0 20px;
     overflow: hidden;
-}
-.pro{
-    float: left;
-    flex: 0 0 auto;
-    margin-left:20px;
-    position: relative;
-}
-.pro img{
-    display: block;
-    
-}
-.pro a{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* margin-left:20px; */
-    overflow: hidden;
-}
-
-.pro a:hover{
-    background-color: #666666;
-    opacity: .3;
+    .pro{
+        float: left;
+        flex: 0 0 auto;
+        margin-left:20px;
+        position: relative;
+        img{
+            display: block;
+        }
+        a{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* margin-left:20px; */
+            overflow: hidden;
+            a:hover{
+                background-color: #666666;
+                opacity: .3;
+            }
+        }
+    }
 }
 
 /* feature */
